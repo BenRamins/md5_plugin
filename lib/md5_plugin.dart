@@ -13,6 +13,6 @@ class Md5Plugin {
       'file_path': filePath,
     };
     var checksum = await _channel.invokeMethod<String>('getMD5', map);
-    return checksum;
+    return checksum!;
   }
 }
